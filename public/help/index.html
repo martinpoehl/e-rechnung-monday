@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Swiss QR Invoice – How to use</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 760px; margin: 0 auto; padding: 2rem 1.25rem; color: #1a1a1a; line-height: 1.55; }
+  h1 { font-size: 1.6rem; } h2 { font-size: 1.15rem; margin-top: 2rem; }
+  .accent { color: #DA291C; }
+  ol li, ul li { margin: 0.35rem 0; }
+  .card { border: 1px solid #e4e4e4; border-radius: 10px; padding: 1rem 1.25rem; margin: 1rem 0; }
+  footer { margin-top: 3rem; font-size: 0.85rem; color: #666; }
+  a { color: #DA291C; }
+  hr { border: none; border-top: 1px solid #e4e4e4; margin: 2.5rem 0; }
+</style>
+</head>
+<body>
+<h1><span class="accent">Swiss QR Invoice</span> – How to use</h1>
+<p>Create compliant Swiss QR bills (QR-Rechnung) directly from your monday.com boards. Everything runs in your browser – no data leaves monday.</p>
+
+<h2>Prerequisites</h2>
+<ul>
+  <li>A monday.com board that contains your customer data (name, street, postal code, city) and an amount column.</li>
+  <li>Your own IBAN or QR-IBAN. With a QR-IBAN, each invoice also needs a QR reference (QRR) column.</li>
+</ul>
+
+<h2>Installation</h2>
+<ol>
+  <li>Install the app from the monday.com marketplace.</li>
+  <li>Open your board and click <strong>“+”</strong> next to the view tabs → <strong>Apps</strong> → <strong>Swiss QR Invoice</strong>.</li>
+</ol>
+
+<h2>First use – 3 steps</h2>
+<div class="card"><strong>1 · Your details (payee)</strong><br>
+Enter your company name, address and IBAN/QR-IBAN once. Choose the PDF format (full A4 page or payment part only) and the invoice language (DE/FR/IT/EN). Everything is saved automatically.</div>
+<div class="card"><strong>2 · Customer data from the board</strong><br>
+Tell the app which board columns contain the customer data. Matching columns are suggested automatically – just review and complete the dropdowns marked with *.</div>
+<div class="card"><strong>3 · Generate</strong><br>
+Click <strong>“Create PDF”</strong> next to any item. The QR bill is validated (IBAN checksum, reference rules, field lengths) and downloaded as a PDF. Scan the QR code with any Swiss banking app to verify.</div>
+
+<h2>Notes</h2>
+<ul>
+  <li><strong>QR-IBAN vs. IBAN:</strong> a QR-IBAN requires a valid QR reference; a regular IBAN must not have one. The app checks this and shows a clear message.</li>
+  <li><strong>Privacy:</strong> the PDF is generated entirely in your browser. Customer and payment data never reach any third-party server.</li>
+  <li><strong>Languages:</strong> the app interface follows your monday language (DE/FR/IT/EN); the invoice language is set per board view in step 1.</li>
+</ul>
+
+<hr>
+
+<h1 id="de">Anleitung (Deutsch)</h1>
+<h2>Erste Schritte</h2>
+<ol>
+  <li>App aus dem monday.com-Marketplace installieren.</li>
+  <li>Board öffnen → <strong>«+»</strong> neben den View-Tabs → <strong>Apps</strong> → <strong>Swiss QR Invoice</strong>.</li>
+  <li><strong>Schritt 1:</strong> Absenderdaten (Firma, Adresse, IBAN/QR-IBAN) einmal erfassen; PDF-Format und Rechnungssprache wählen.</li>
+  <li><strong>Schritt 2:</strong> Board-Spalten den Rechnungsfeldern zuordnen – Vorschläge werden automatisch gesetzt.</li>
+  <li><strong>Schritt 3:</strong> Beim gewünschten Eintrag auf <strong>«PDF erstellen»</strong> klicken – die QR-Rechnung wird geprüft und heruntergeladen.</li>
+</ol>
+<p>Hinweis: Eine QR-IBAN braucht eine gültige QR-Referenz; eine normale IBAN darf keine haben. Die App prüft das automatisch.</p>
+
+<footer>
+  Support: <a href="mailto:martinpoehl@me.com">martinpoehl@me.com</a> ·
+  <a href="terms.html">Terms of Service</a> · <a href="privacy.html">Privacy Policy</a><br>
+  © 2026 Martin Pöhl, Switzerland
+</footer>
+</body>
+</html>

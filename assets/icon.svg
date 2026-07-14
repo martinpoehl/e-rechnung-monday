@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Hintergrund: weisse abgerundete Kachel mit feiner Kontur -->
+  <rect x="2" y="2" width="508" height="508" rx="92" fill="#FFFFFF" stroke="#E4E4E4" stroke-width="4"/>
+
+  <!-- Stilisierter QR-Code (21x21 Module à 16px, Bereich 88..424) -->
+  <g fill="#1A1A1A">
+    <!-- Finder-Pattern oben links -->
+    <path d="M88 88h112v112H88z M104 104v80h80v-80z" fill-rule="evenodd"/>
+    <rect x="120" y="120" width="48" height="48" rx="6"/>
+    <!-- Finder-Pattern oben rechts -->
+    <path d="M312 88h112v112H312z M328 104v80h80v-80z" fill-rule="evenodd"/>
+    <rect x="344" y="120" width="48" height="48" rx="6"/>
+    <!-- Finder-Pattern unten links -->
+    <path d="M88 312h112v112H88z M104 328v80h80v-80z" fill-rule="evenodd"/>
+    <rect x="120" y="344" width="48" height="48" rx="6"/>
+
+    <!-- Timing-Muster -->
+    <rect x="216" y="184" width="16" height="16" rx="2.5"/>
+    <rect x="248" y="184" width="16" height="16" rx="2.5"/>
+    <rect x="280" y="184" width="16" height="16" rx="2.5"/>
+    <rect x="184" y="216" width="16" height="16" rx="2.5"/>
+    <rect x="184" y="248" width="16" height="16" rx="2.5"/>
+    <rect x="184" y="280" width="16" height="16" rx="2.5"/>
+
+    <!-- Datenmodule oben zwischen den Findern -->
+    <rect x="216" y="88" width="16" height="16" rx="2.5"/>
+    <rect x="280" y="88" width="16" height="16" rx="2.5"/>
+    <rect x="248" y="104" width="16" height="16" rx="2.5"/>
+    <rect x="216" y="120" width="16" height="16" rx="2.5"/>
+    <rect x="280" y="120" width="16" height="16" rx="2.5"/>
+    <rect x="264" y="136" width="16" height="16" rx="2.5"/>
+    <rect x="232" y="152" width="16" height="16" rx="2.5"/>
+
+    <!-- Datenmodule links -->
+    <rect x="88" y="216" width="16" height="16" rx="2.5"/>
+    <rect x="120" y="232" width="16" height="16" rx="2.5"/>
+    <rect x="152" y="248" width="16" height="16" rx="2.5"/>
+    <rect x="104" y="264" width="16" height="16" rx="2.5"/>
+    <rect x="88" y="280" width="16" height="16" rx="2.5"/>
+    <rect x="152" y="280" width="16" height="16" rx="2.5"/>
+
+    <!-- Datenmodule rechts -->
+    <rect x="312" y="216" width="16" height="16" rx="2.5"/>
+    <rect x="344" y="216" width="16" height="16" rx="2.5"/>
+    <rect x="392" y="232" width="16" height="16" rx="2.5"/>
+    <rect x="328" y="248" width="16" height="16" rx="2.5"/>
+    <rect x="424" y="248" width="16" height="16" rx="2.5"/>
+    <rect x="360" y="264" width="16" height="16" rx="2.5"/>
+    <rect x="408" y="264" width="16" height="16" rx="2.5"/>
+    <rect x="312" y="280" width="16" height="16" rx="2.5"/>
+    <rect x="376" y="296" width="16" height="16" rx="2.5"/>
+
+    <!-- Datenmodule unten Mitte -->
+    <rect x="216" y="312" width="16" height="16" rx="2.5"/>
+    <rect x="280" y="312" width="16" height="16" rx="2.5"/>
+    <rect x="248" y="328" width="16" height="16" rx="2.5"/>
+    <rect x="232" y="344" width="16" height="16" rx="2.5"/>
+    <rect x="296" y="344" width="16" height="16" rx="2.5"/>
+    <rect x="216" y="376" width="16" height="16" rx="2.5"/>
+    <rect x="264" y="376" width="16" height="16" rx="2.5"/>
+    <rect x="240" y="408" width="16" height="16" rx="2.5"/>
+    <rect x="288" y="408" width="16" height="16" rx="2.5"/>
+
+    <!-- Datenmodule unten rechts -->
+    <rect x="328" y="328" width="16" height="16" rx="2.5"/>
+    <rect x="360" y="312" width="16" height="16" rx="2.5"/>
+    <rect x="392" y="328" width="16" height="16" rx="2.5"/>
+    <rect x="312" y="360" width="16" height="16" rx="2.5"/>
+    <rect x="344" y="360" width="16" height="16" rx="2.5"/>
+    <rect x="376" y="376" width="16" height="16" rx="2.5"/>
+    <rect x="424" y="360" width="16" height="16" rx="2.5"/>
+    <rect x="328" y="392" width="16" height="16" rx="2.5"/>
+    <rect x="360" y="408" width="16" height="16" rx="2.5"/>
+    <rect x="392" y="392" width="16" height="16" rx="2.5"/>
+    <rect x="408" y="424" width="16" height="16" rx="2.5"/>
+  </g>
+
+  <!-- Swiss Cross Zentrum (wie im echten Swiss-QR-Zahlteil) -->
+  <rect x="200" y="200" width="112" height="112" rx="10" fill="#DA291C"/>
+  <g fill="#FFFFFF">
+    <rect x="245" y="221" width="22" height="70"/>
+    <rect x="221" y="245" width="70" height="22"/>
+  </g>
+</svg>
