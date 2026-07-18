@@ -3,47 +3,49 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Swiss QR Invoice – How to use</title>
+<title>E-Invoice (XRechnung) – How to use</title>
 <style>
   body { font-family: system-ui, sans-serif; max-width: 760px; margin: 0 auto; padding: 2rem 1.25rem; color: #1a1a1a; line-height: 1.55; }
   h1 { font-size: 1.6rem; } h2 { font-size: 1.15rem; margin-top: 2rem; }
-  .accent { color: #DA291C; }
+  .accent { color: #1f4e79; }
   ol li, ul li { margin: 0.35rem 0; }
   .card { border: 1px solid #e4e4e4; border-radius: 10px; padding: 1rem 1.25rem; margin: 1rem 0; }
   footer { margin-top: 3rem; font-size: 0.85rem; color: #666; }
-  a { color: #DA291C; }
+  a { color: #1f4e79; }
   hr { border: none; border-top: 1px solid #e4e4e4; margin: 2.5rem 0; }
 </style>
 </head>
 <body>
-<h1><span class="accent">Swiss QR Invoice</span> – How to use</h1>
-<p>Create compliant Swiss QR bills (QR-Rechnung) directly from your monday.com boards. Everything runs in your browser – no data leaves monday.</p>
+<h1><span class="accent">E-Invoice (XRechnung)</span> – How to use</h1>
+<p>Create compliant German e-invoices (XRechnung 3.0, EN&nbsp;16931) directly from your monday.com boards. Everything runs in your browser – no data leaves monday.</p>
 
 <h2>Prerequisites</h2>
 <ul>
-  <li>A monday.com board that contains your customer data (name, street, postal code, city) and an amount column.</li>
-  <li>Your own IBAN or QR-IBAN. With a QR-IBAN, each invoice also needs a QR reference (QRR) column.</li>
+  <li>A monday.com board that contains your invoice data: invoice number, customer (name, street, postal code, city, email), net amount and service/delivery date.</li>
+  <li>Your German VAT ID (USt-IdNr, format <code>DE</code> + 9 digits) and your IBAN.</li>
 </ul>
 
 <h2>Installation</h2>
 <ol>
   <li>Install the app from the monday.com marketplace.</li>
-  <li>Open your board and click <strong>“+”</strong> next to the view tabs → <strong>Apps</strong> → <strong>Swiss QR Invoice</strong>.</li>
+  <li>Open your board and click <strong>“+”</strong> next to the view tabs → <strong>Apps</strong> → <strong>E-Invoice (XRechnung)</strong>.</li>
 </ol>
 
 <h2>First use – 3 steps</h2>
-<div class="card"><strong>1 · Your details (payee)</strong><br>
-Enter your company name, address and IBAN/QR-IBAN once. Choose the PDF format (full A4 page or payment part only) and the invoice language (DE/FR/IT/EN). Everything is saved automatically.</div>
-<div class="card"><strong>2 · Customer data from the board</strong><br>
-Tell the app which board columns contain the customer data. Matching columns are suggested automatically – just review and complete the dropdowns marked with *.</div>
+<div class="card"><strong>1 · Your details (seller)</strong><br>
+Enter your company name, address, VAT ID, email, phone, contact person, IBAN, payment terms and VAT rate (19&nbsp;% or 7&nbsp;%) once. All of these are mandatory fields of the XRechnung standard. Everything is saved automatically.</div>
+<div class="card"><strong>2 · Invoice data from the board</strong><br>
+Tell the app which board columns contain the invoice data. Matching columns are suggested automatically – just review and complete the dropdowns marked with *. Service description and buyer reference (order no.) are optional.</div>
 <div class="card"><strong>3 · Generate</strong><br>
-Click <strong>“Create PDF”</strong> next to any item. The QR bill is validated (IBAN checksum, reference rules, field lengths) and downloaded as a PDF. Scan the QR code with any Swiss banking app to verify.</div>
+Click <strong>“Create XRechnung”</strong> next to any item. The invoice is validated (VAT ID format, IBAN checksum, mandatory fields, postal codes, email) and downloaded as an XRechnung&nbsp;3.0 XML file, ready to send to your customer or upload to an invoicing portal.</div>
 
 <h2>Notes</h2>
 <ul>
-  <li><strong>QR-IBAN vs. IBAN:</strong> a QR-IBAN requires a valid QR reference; a regular IBAN must not have one. The app checks this and shows a clear message.</li>
-  <li><strong>Privacy:</strong> the PDF is generated entirely in your browser. Customer and payment data never reach any third-party server.</li>
-  <li><strong>Languages:</strong> the app interface follows your monday language (DE/FR/IT/EN); the invoice language is set per board view in step 1.</li>
+  <li><strong>Standard:</strong> the XML follows XRechnung 3.0 (EN&nbsp;16931, UN/CEFACT CII syntax), including the German mandatory fields such as seller VAT ID, email addresses of both parties, seller phone and buyer reference. If no buyer reference column is mapped, the invoice number is used as the buyer reference (BT-10).</li>
+  <li><strong>Why e-invoices:</strong> Germany requires B2B e-invoices in a structured format (such as XRechnung) – receiving since 2025, issuing progressively from 2027/2028. A PDF alone will no longer qualify.</li>
+  <li><strong>VAT:</strong> the current version supports the standard rates 19&nbsp;% and 7&nbsp;%. Zero-rated and small-business (§19 UStG) invoices are not yet supported.</li>
+  <li><strong>Privacy:</strong> the XML is generated entirely in your browser. Customer and payment data never reach any third-party server.</li>
+  <li><strong>Languages:</strong> the app interface follows your monday language (DE/EN) and can be overridden in step 1.</li>
 </ul>
 
 <hr>
@@ -52,12 +54,12 @@ Click <strong>“Create PDF”</strong> next to any item. The QR bill is validat
 <h2>Erste Schritte</h2>
 <ol>
   <li>App aus dem monday.com-Marketplace installieren.</li>
-  <li>Board öffnen → <strong>«+»</strong> neben den View-Tabs → <strong>Apps</strong> → <strong>Swiss QR Invoice</strong>.</li>
-  <li><strong>Schritt 1:</strong> Absenderdaten (Firma, Adresse, IBAN/QR-IBAN) einmal erfassen; PDF-Format und Rechnungssprache wählen.</li>
-  <li><strong>Schritt 2:</strong> Board-Spalten den Rechnungsfeldern zuordnen – Vorschläge werden automatisch gesetzt.</li>
-  <li><strong>Schritt 3:</strong> Beim gewünschten Eintrag auf <strong>«PDF erstellen»</strong> klicken – die QR-Rechnung wird geprüft und heruntergeladen.</li>
+  <li>Board öffnen → <strong>«+»</strong> neben den View-Tabs → <strong>Apps</strong> → <strong>E-Invoice (XRechnung)</strong>.</li>
+  <li><strong>Schritt 1:</strong> Ihre Angaben als Rechnungssteller einmal erfassen (Firma, Adresse, USt-IdNr, E-Mail, Telefon, Ansprechpartner, IBAN, Zahlungsziel, USt-Satz 19&nbsp;% oder 7&nbsp;%). Alles Pflichtfelder der XRechnung – die App speichert sie automatisch.</li>
+  <li><strong>Schritt 2:</strong> Board-Spalten den Rechnungsfeldern zuordnen – passende Spalten werden automatisch vorgeschlagen. Leistungsbeschreibung und Käufer-Referenz (Bestell-Nr.) sind optional.</li>
+  <li><strong>Schritt 3:</strong> Beim gewünschten Eintrag auf <strong>«XRechnung erstellen»</strong> klicken – die E-Rechnung wird geprüft und als XRechnung-3.0-XML heruntergeladen.</li>
 </ol>
-<p>Hinweis: Eine QR-IBAN braucht eine gültige QR-Referenz; eine normale IBAN darf keine haben. Die App prüft das automatisch.</p>
+<p>Hinweis: Ohne zugeordnete Käufer-Referenz verwendet die App die Rechnungsnummer als Leitweg-/Käufer-Referenz (BT-10). Unterstützt werden die USt-Sätze 19&nbsp;% und 7&nbsp;%; Steuerbefreiung und Kleinunternehmerregelung (§19 UStG) sind noch nicht enthalten.</p>
 
 <footer>
   Support: <a href="mailto:martinpoehl@me.com">martinpoehl@me.com</a> ·

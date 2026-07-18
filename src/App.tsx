@@ -41,7 +41,7 @@ export default function App() {
       )}
       <footer style={{ marginTop: "1.5rem", opacity: 0.75 }}>
         <a
-          href="./help/"
+          href="./help/index.html"
           target="_blank"
           rel="noreferrer"
           style={{ color: "inherit" }}

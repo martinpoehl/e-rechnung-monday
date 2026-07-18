@@ -1,109 +1,120 @@
-# Marketplace-Listing – Texte & Checkliste
+# Marketplace-Listing – Texte & Checkliste (E-Rechnung / XRechnung)
 
-Stand 09.07.2026. Quelle: aktueller Projektstand, monday Developer Center / Submission-Formular und lokale App-Artefakte.
+Stand 19.07.2026. Quelle: Projektstand E-Rechnung, K3-Validierung (Vault: `03 Bereiche/Selbständigkeit/K3-Validierung XRechnung für monday.md`) und das Submission-Playbook der QR-App.
 
 ## App-Name (max. 30 Zeichen, ohne «monday»)
 
-**Swiss QR-Rechnung** im Developer Center / **Swiss QR Invoice** im englischen Listing. Vor Submission konsistent entscheiden; Empfehlung: Developer-Center-Name nur ändern, wenn ohne Review-Risiko möglich. Listing-Text kann englisch bleiben.
+Empfehlung: **«XRechnung E-Rechnung»** (20 Zeichen) – beide deutschen Suchbegriffe direkt im Titel, denn der Marketplace matcht Titel-Keywords am stärksten (Faktoora scheitert genau daran: nur englisches Listing, matcht «XRechnung»/«E-Rechnung» nicht). UI-Titel der App bleibt «E-Invoice – XRechnung from board data» / «E-Rechnung – XRechnung aus Board-Daten».
 
 ## Short Description (max. 60 Zeichen)
 
-EN: `Create compliant Swiss QR bills from your board items.` (55)
+EN: `Create compliant German e-invoices (XRechnung) from boards.` (59)
 
 ## Long Description (200–2500 Zeichen, EN primär)
 
 ```text
-Swiss QR Invoice generates fully compliant Swiss QR bills (QR-Rechnung) directly from your monday.com boards — no exports, no external tools.
+E-Invoice (XRechnung) generates fully compliant German e-invoices directly from your monday.com boards — no exports, no sync, no second subscription.
+
+WHY NOW
+Germany mandates structured B2B e-invoices (EN 16931, e.g. XRechnung): receiving since 2025, issuing progressively from 2027/2028. A plain PDF invoice will no longer qualify.
 
 HOW IT WORKS
-1. Enter your payee details once (company, address, IBAN or QR-IBAN) — they are stored securely in monday storage.
+1. Enter your seller details once (company, address, VAT ID, IBAN, payment terms, VAT rate) — stored securely in monday storage.
 2. Map your board columns to the invoice fields. Matching columns are suggested automatically.
-3. Click "Create PDF" next to any item to download a ready-to-send QR bill.
+3. Click "Create XRechnung" next to any item to download a ready-to-send XRechnung 3.0 XML file.
 
 KEY FEATURES
-• Compliant with the Swiss Payment Standards (SIX) — scannable by every Swiss banking app
-• Supports IBAN and QR-IBAN with QR reference (QRR), with built-in validation of IBAN checksums, reference rules and field lengths
-• Full A4 page with payment part, or payment-part-only PDF to attach to your own invoice
-• Invoice language per customer: German, French, Italian or English
-• App interface in DE / FR / IT / EN — follows your monday language automatically
-• Privacy by design: PDFs are generated entirely in your browser. No customer or payment data ever leaves monday or reaches any third-party server.
+• Compliant with XRechnung 3.0 (EN 16931, UN/CEFACT CII) — validated against the official KoSIT validator
+• All German mandatory fields built in: seller VAT ID, contact details, buyer reference (BT-10), service date
+• Built-in validation before download: VAT ID format, IBAN checksum, postal codes, email, amounts
+• Works on ANY board — no monday CRM subscription required
+• App interface in German and English — follows your monday language automatically
+• Privacy by design: the XML is generated entirely in your browser. No customer or payment data ever leaves monday or reaches any third-party server.
 
-MADE FOR SWITZERLAND
-Built for Swiss and Liechtenstein companies that manage customers, projects or orders on monday.com and want to invoice with the official QR bill — without switching to a separate accounting tool.
+MADE FOR GERMANY
+Built for companies that manage customers, orders or projects on monday.com and need to issue legally compliant German B2B e-invoices — without switching to a separate accounting tool or paying for a second SaaS.
 ```
 
-(ca. 1200 Zeichen — innerhalb des Limits)
+(ca. 1500 Zeichen — innerhalb des Limits)
 
 ## Deutsche Variante (für DE-Absatz / Übersetzung)
 
 ```text
-Swiss QR Invoice erzeugt vollständig konforme Schweizer QR-Rechnungen direkt aus deinen monday.com-Boards – ohne Export, ohne Zusatztools.
+E-Rechnung (XRechnung) erzeugt vollständig konforme deutsche E-Rechnungen direkt aus deinen monday.com-Boards – ohne Export, ohne Sync, ohne Zweit-Abo.
+
+WARUM JETZT
+Deutschland verlangt strukturierte B2B-E-Rechnungen (EN 16931, z.B. XRechnung): Empfang seit 2025 Pflicht, Ausstellung stufenweise ab 2027/2028. Eine reine PDF-Rechnung genügt dann nicht mehr.
 
 SO FUNKTIONIERT ES
-1. Absenderdaten einmal erfassen (Firma, Adresse, IBAN oder QR-IBAN)
+1. Verkäuferdaten einmal erfassen (Firma, Adresse, USt-IdNr, IBAN, Zahlungsziel, USt-Satz)
 2. Board-Spalten den Rechnungsfeldern zuordnen – passende Spalten werden automatisch vorgeschlagen
-3. Bei jedem Eintrag auf «PDF erstellen» klicken – fertig ist die versandbereite QR-Rechnung
+3. Bei jedem Eintrag auf «XRechnung erstellen» klicken – fertig ist die XRechnung-3.0-XML-Datei
 
 FUNKTIONEN
-• Konform mit den Swiss Payment Standards (SIX) – von jeder Schweizer Banking-App scannbar
-• IBAN und QR-IBAN mit QR-Referenz (QRR), inkl. Validierung von Prüfziffern, Referenzregeln und Feldlängen
-• Ganze A4-Seite mit Zahlteil oder nur Zahlteil zum Anhängen
-• Rechnungssprache pro Kunde: Deutsch, Französisch, Italienisch, Englisch
-• App-Oberfläche in DE / FR / IT / EN – folgt automatisch deiner monday-Sprache
-• Datenschutz eingebaut: PDFs entstehen komplett im Browser. Keine Kunden- oder Zahlungsdaten verlassen monday oder erreichen einen Drittserver.
+• Konform mit XRechnung 3.0 (EN 16931, UN/CEFACT CII) – geprüft gegen den offiziellen KoSIT-Validator
+• Alle deutschen Pflichtfelder eingebaut: USt-IdNr, Kontaktdaten, Käufer-Referenz (BT-10), Leistungsdatum
+• Validierung vor dem Download: USt-IdNr-Format, IBAN-Prüfsumme, PLZ, E-Mail, Beträge
+• Funktioniert auf JEDEM Board – kein monday-CRM-Abo nötig
+• App-Oberfläche in Deutsch und Englisch – folgt automatisch deiner monday-Sprache
+• Datenschutz eingebaut: Die XML entsteht komplett im Browser. Keine Kunden- oder Zahlungsdaten verlassen monday oder erreichen einen Drittserver.
 ```
+
+## Abgrenzung (aus K3-Validierung, für Review-Rückfragen)
+
+- **vs. monday-natives Quotes & Invoices:** nur im CRM-Produkt, reine PDFs ohne Steuer-/Compliance-Felder (keine USt-IdNr, keine Leitweg-ID, kein XML) → für deutsches B2B ab 01.01.2027 unbrauchbar. Diese App erzeugt EN-16931-konforme XRechnung aus jedem beliebigen Board – auch ohne CRM-Abo.
+- **vs. Faktoora (einziger Nachbar):** Sync-Connector zum eigenen SaaS (Doppel-Abo €9–129/Mt), synct Rechnungen **aus** Faktoora **in** Boards, erzeugt keine E-Rechnungen aus Board-Daten.
 
 ## Keywords (max. 10)
 
-`invoice, qr bill, qr-rechnung, switzerland, swiss, billing, iban, payment, rechnung, facture`
+`xrechnung, e-rechnung, e-invoice, zugferd, germany, deutschland, rechnung, invoice, en 16931, billing`
 
 ## Kategorien (max. 3)
 
-Finance / Accounting · Productivity · (dritte offenlassen oder «Operations»)
+Finance / Accounting · Productivity · (dritte offenlassen)
 
-## Assets (Pflichtgrössen)
+## Assets (Pflichtgrössen) – noch zu erstellen
 
 | Asset | Datei | Status |
 |---|---|---|
-| App-Icon 192×192 | `assets/icon-192.png` | ✅ fertig |
-| Developer-Icon 192×192 | `assets/developer-icon-192.png` | ✅ fertig (MP-Monogramm) |
-| App-Card 592×348 | `assets/app-card-592x348.png` | ✅ fertig |
-| Galerie 3–5 Bilder 1920×960 | `assets/gallery/` | ✅ 4 Screenshots vorbereitet |
-| Demo-Video ≤120 s, ≤50 MB | externer teilbarer Link | ⬜ echtes monday-Screen-Recording noch offen |
+| App-Icon 192×192 | `assets/icon-192.png` | ⬜ neu gestalten (nicht QR-Icon wiederverwenden) |
+| Developer-Icon 192×192 | `assets/developer-icon-192.png` | ✅ MP-Monogramm aus QR-App übernehmbar |
+| App-Card 592×348 | `assets/app-card-592x348.png` | ⬜ |
+| Galerie 3–5 Bilder 1920×960 | `assets/gallery/` | ⬜ nach Deploy im Demo-Board aufnehmen |
+| Demo-Video ≤120 s, ≤50 MB | externer teilbarer Link | ⬜ Playwright-Pipeline der QR-App wiederverwenden (`docs/demo-video-briefing.md`) |
 
-### Galerie-Screenshot-Plan (1920×960, im Board aufnehmen)
+### Galerie-Screenshot-Plan (1920×960, im Demo-Board aufnehmen)
 
 1. Die 3-Schritte-View komplett im Board (Schritt 1–3 sichtbar)
 2. Schritt 2 mit Auto-Mapping-Vorschlägen im Dropdown
-3. Erfolgsmoment: Browser/PDF-Download sichtbar machen
-4. Danach das heruntergeladene A4-PDF öffnen und den Zahlteil kurz zeigen
-5. Optional: Sprachwechsel (gleiche View auf FR/IT)
+3. Erfolgsmoment: XML-Download sichtbar machen
+4. Die heruntergeladene XML kurz zeigen (z.B. im Editor mit hervorgehobenen Pflichtfeldern) oder KoSIT-Report
+5. Optional: Sprachwechsel DE/EN
 
 ## Support & Links (Pflichtfelder)
 
 | Feld | Wert | Status |
 |---|---|---|
-| Support-E-Mail | `martinpoehl@me.com` | ✅ fuer Free-Demand-Test |
-| Website / Entity Website | `https://v129801be4ddd53528ff3ff907b76418c.cdn2.monday.app/help/` | ✅ monday-CDN |
-| How-to-Seite (HTTPS) | `https://v129801be4ddd53528ff3ff907b76418c.cdn2.monday.app/help/` | ✅ |
-| Terms of Service | `https://v129801be4ddd53528ff3ff907b76418c.cdn2.monday.app/help/terms.html` | ✅ Entwurf, Martin akzeptiert rechtlich selbst |
-| Privacy Policy | `https://v129801be4ddd53528ff3ff907b76418c.cdn2.monday.app/help/privacy.html` | ✅ |
-| Demo-Link (nur fürs Review) | teilbarer Link zum echten monday-Screen-Recording | ⬜ noch offen |
+| Support-E-Mail | `martinpoehl@me.com` | ✅ wie QR-App |
+| Website / Entity Website | `<CDN-URL>/help/index.html` | ⬜ URL entsteht beim Deploy; **immer mit `index.html`** – `/help/` allein liefert die leere App-Hülle (weisse Seite, QR-Erfahrung) |
+| How-to-Seite (HTTPS) | `<CDN-URL>/help/index.html` | ⬜ Seite fertig in `public/help/` |
+| Terms of Service | `<CDN-URL>/help/terms.html` | ⬜ Seite fertig, Martin akzeptiert rechtlich selbst |
+| Privacy Policy | `<CDN-URL>/help/privacy.html` | ⬜ Seite fertig |
+| Demo-Link (nur fürs Review) | teilbarer Link zum echten monday-Screen-Recording | ⬜ |
 
 ## Technische Pflichtpunkte (Product Requirements)
 
-- [x] `valueCreatedForUser`-Event nach erfolgreichem PDF-Download (v3)
-- [x] How-to-Link in der App (Footer, v3)
-- [x] Pagination für grosse Boards (items_page-Cursor)
+- [x] `valueCreatedForUser`-Event nach erfolgreichem XML-Download (`src/monday/events.ts`)
+- [x] How-to-Link in der App (Footer, `./help/index.html`)
+- [x] Pagination für grosse Boards (items_page-Cursor, `src/monday/board.ts`)
 - [x] Mehrere Spalten gleichen Typs (freie Zuordnung per Dropdown)
-- [ ] Verhalten für Viewer/Guests prüfen (Storage-Schreibrechte)
-- [x] Install-Link notiert: `https://auth.monday.com/oauth2/authorize?client_id=b57ba9876176a00c088edb6140d64a66&response_type=install`
+- [ ] Verhalten für Viewer/Guests prüfen (Storage-Schreibrechte) – gleicher offener Punkt wie bei der QR-App
+- [ ] Install-Link nach Registrierung hier notieren
 
-## Submission (Reihenfolge)
+## Submission (Reihenfolge, Playbook der QR-App)
 
-1. Echtes Demo-Video in monday aufnehmen und als teilbaren Link bereitstellen. Keine Slideshow und keine generierte QR-Vorschau verwenden; die App lädt ein PDF herunter.
-2. Submission-Formular mit den vorbereiteten Antworten aus dem Vault ausfüllen: `02 Projekte/Swiss QR-Rechnung für monday/Submission-Formular Antworten.md`.
-3. **Pricing: Free** wählen.
-4. App Review Checklist durchgehen.
-5. Martin akzeptiert die rechtlichen Checkboxen/Signatur selbst und sendet das Formular ab.
-6. Antwort in ~72 Arbeitsstunden; Rückfragen kommen über ein geteiltes monday-Board.
+1. App im Developer Center registrieren (Board-View-Feature), Build via apps-cli auf monday-CDN deployen.
+2. In-monday-Test auf Demo-Board mit deutschen Beispieldaten; XML gegen KoSIT-Validator gegenprüfen.
+3. Echtes Demo-Video aufnehmen (keine Slideshow; die App lädt eine XML herunter) und als teilbaren Link bereitstellen.
+4. Submission-Formular mit den Antworten nach dem Muster der QR-App ausfüllen (Vault: `02 Projekte/Swiss QR-Rechnung für monday/Submission-Formular Antworten.md`); Mobile = No, AI/LLM = None, Built using monday code = Yes.
+5. **Pricing: Free** (Demand-Test, Gates: ≥ 10 Installs + ≥ 3 aktive Accounts in 30 Tagen → Pro-Tier).
+6. Martin akzeptiert die rechtlichen Checkboxen/Signatur selbst und sendet ab. Antwort in ~72 Arbeitsstunden; Rückfragen über geteiltes monday-Board.
