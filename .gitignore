@@ -3,3 +3,4 @@ dist/
 *.log
 sample-*.pdf
 .DS_Store
+fixture-report.xml
